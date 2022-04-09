@@ -45,9 +45,9 @@ curry(sum)(1, 2)(3); // TS2349: This expression is not callable. [...]
 ### `Curried<F, N>` type
 `Curried<F, N>` type represents a curried function and is effectively a return type of the `curry` function.
 
-Because `Curried<F, N>` type is [idempotent](https://en.wikipedia.org/wiki/Idempotence), i.e., `Curried<F, N> ≡ Curried<Curried<F, N>, N>`, you can mindlessly use it as a function parameter without worrying about applying it multiple times:
+Because `Curried<F, N>` type is [idempotent](https://en.wikipedia.org/wiki/Idempotence), i.e., `Curried<F, N> ≡ Curried<Curried<F, N>, N>`, you can mindlessly use it as a function parameter without worrying about it being applied multiple times:
 ```ts
-import { curry, Curried } from "./curry";
+import { curry, Curried } from "strong-curry";
 
 type BinaryOperator = (a: number, b: number) => number;
 const add = curry<BinaryOperator>((a, b) => a + b);
