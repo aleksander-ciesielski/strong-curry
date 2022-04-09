@@ -61,4 +61,4 @@ console.log(compute(curry(curry(add)))); // OK
 ```
 
 ## Limitations
-Like many complex generic typings, this package works by defining multiple overloads to provide the strongly-typed currying. Because of that, there is a maximum of supported parameters (namely 10). Providing a function with 11 or more parameters will yield the type of the uncurried version.
+Like many complex generic-based typings, this package works by defining multiple overloads to provide the strongly-typed currying. Because of that, there is a maximum of supported parameters (namely 10). Providing a function with 11 or more parameters will yield the type of the uncurried version.
