@@ -1,0 +1,29 @@
+{
+  "name": "strong-curry",
+  "version": "1.0.0",
+  "author": "Aleksander Ciesielski",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksander-ciesielski/strong-curry.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aleksander-ciesielski/strong-curry/issues"
+  },
+  "keywords": [
+    "curry",
+    "strongly-typed",
+    "functional-programming"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "just-curry-it": "^5.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}
