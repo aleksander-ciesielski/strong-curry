@@ -1,4 +1,15 @@
-# strong-curry ⚡🍛
+<div align="center">
+  <h1>strong-curry ⚡🍛</h1>
+  <a href="https://www.npmjs.com/package/strong-curry">
+    <img src="https://img.shields.io/npm/v/strong-curry" alt="strong-curry on npm">
+  </a>
+  <a href="https://github.com/aleksander-ciesielski/strong-curry/issues">
+    <img src="https://img.shields.io/github/issues/aleksander-ciesielski/strong-curry" alt="GitHub issues">
+  </a>
+  <img src="https://img.shields.io/npm/l/strong-curry" alt="Licensed using MIT license">
+</div>
+<br />
+
 `strong-curry` is a tiny package built on the top of `just-curry-it` that provides a strongly-typed implementation of function currying.
 
 The whole implementation included in this package comes from the `just-curry-it`; this project only aims to provide precise typings for the currying process.
@@ -61,4 +72,4 @@ console.log(compute(curry(curry(add)))); // OK
 ```
 
 ## Limitations
-Like many complex generic-based typings, this package works by defining multiple overloads to provide the strongly-typed currying. Because of that, there is a maximum of supported parameters (namely 10). Providing a function with 11 or more parameters will yield the type of the uncurried version.
+Like many complex generic-based typings, this package works by defining multiple overloads to provide a type-safe behavior. Because of that, there is a maximum of supported parameters (namely 10). Providing a function with 11 or more parameters will yield the type of the uncurried version.
